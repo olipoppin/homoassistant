@@ -1,2 +1,21 @@
-# Example configuration.yaml entry
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+fan:
+  -platform: dyson
+   username: oliverybarra@gmail.com
+   password: Alibabba!23
+   language: US
+   devices:
+    - device_id: NM8-US-KCA0119B
+    device_ip: 192.168.1.108
