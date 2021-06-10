@@ -1,0 +1,27 @@
+- id: '1622335799831'
+  alias: google pixel battery alert
+  description: google pixel battery alert
+  trigger:
+  - type: battery_level
+    platform: device
+    device_id: 1fc3f4a90eb3acb71f4d85bce2464f93
+    entity_id: sensor.pixel_3_xl_battery_level
+    domain: sensor
+    below: 25
+  condition:
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: binary_sensor.pixel_3_xl_is_charging
+      state: 'false'
+      attribute: friendly_name
+  action:
+  - service: tts.google_translate_say
+    data:
+      entity_id: media_player.bedroom_display
+      message: Bitch.... yo phone is dyin! Plug it in
+  - service: tts.google_translate_say
+    data:
+      entity_id: media_player.bathroom_speaker
+      message: Bitch.... yo phone is dyin! Plug it in
+  mode: single
