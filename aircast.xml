@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<aircast>
+<common>
+<enabled>1</enabled>
+<stop_receiver>0</stop_receiver>
+<media_volume>1.0000</media_volume>
+<latency></latency>
+<codec>flac</codec>
+<artwork></artwork>
+<drift>0</drift>
+<metadata>1</metadata>
+<flush>1</flush>
+</common>
+<main_log>info</main_log>
+<cast_log>info</cast_log>
+<util_log>warn</util_log>
+<log_limit>-1</log_limit>
+<max_players>32</max_players>
+<ports>0:0</ports>
+<binding>?</binding>
+<device>
+<udn>bb783ebf33590bb562e84db0e31d76be</udn>
+<name>Bathroom speaker 2+</name>
+<mac>cc:cc:47:29:a1:a9</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>65380351f5ba9d96df345eb4affc4f71</udn>
+<name>Bathroom speaker+</name>
+<mac>cc:cc:47:29:a1:a9</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>f01c628022259729b9e43169cec07f56</udn>
+<name>Bedroom display+</name>
+<mac>cc:cc:4f:60:46:6a</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>958d13fe1e551b7471f228a76744c302</udn>
+<name>LG Smart TV+</name>
+<mac>cc:cc:00:00:00:00</mac>
+<enabled>1</enabled>
+</device>
+</aircast>
