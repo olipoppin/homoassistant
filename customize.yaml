@@ -1,0 +1,5 @@
+light.tv_lights:
+  supported_color_modes:
+  - color_temp
+  - hs
+  - rgb
