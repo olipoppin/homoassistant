@@ -2,6 +2,8 @@
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
+cloud:
+
 # Text to speech
 tts:
   - platform: google_translate
@@ -11,11 +13,38 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 
-fan:
-  -platform: dyson
-   username: oliverybarra@gmail.com
-   password: Alibabba!23
-   language: US
-   devices:
-    - device_id: NM8-US-KCA0119B
-    device_ip: 192.168.1.108
+camera:
+  - platform: ffmpeg
+    name: Wyze Cam 1
+    input: !secret wyzecam1
+    
+  - platform: ffmpeg
+    name: Wyze Cam 2
+    input: !secret wyzecam2
+    
+light:
+  - platform: flux_led
+    devices:
+      192.168.1.22:
+        name: TV Lights
+      192.168.1.52:
+        name: Kitchen Counter Lights
+        
+# Example configuration.yaml entry
+zeroconf:
+
+# Example configuration.yaml entry
+ifttt:
+  key: YNHyCbuOx3xIIrNZjZYRIzvT5yAq4gr0Inxj8H9yRvs2eUMein4ggB3wZhRlimPV
+  
+sensor:
+  - platform: time_date
+    display_options:
+      - 'time'
+      - 'date'
+      - 'date_time'
+      - 'date_time_utc'
+      - 'date_time_iso'
+      - 'time_date'
+      - 'time_utc'
+      - 'beat'
