@@ -1,0 +1,83 @@
+warn  2021-06-16 04:42:20: `permit_join` set to  `true` in configuration.yaml.
+warn  2021-06-16 04:42:20: Allowing new devices to join.
+warn  2021-06-16 04:42:20: Set `permit_join` to `false` once you joined all devices.
+info  2021-06-16 04:43:20: Succesfully changed options
+info  2021-06-16 04:43:20: MQTT publish: topic 'zigbee2mqtt/bridge/response/options', payload '{"data":{"restart_required":false},"status":"ok","transaction":"jnajd-2"}'
+info  2021-06-16 04:43:25: Finished Touchlink scan
+info  2021-06-16 04:43:25: MQTT publish: topic 'zigbee2mqtt/bridge/response/touchlink/scan', payload '{"data":{"found":[]},"status":"ok","transaction":"jnajd-1"}'
+error 2021-06-16 04:45:20: Not connected to MQTT server!
+info  2021-06-16 04:45:25: Connected to MQTT server
+info  2021-06-16 04:45:25: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload 'online'
+info  2021-06-16 04:46:17: Start Touchlink scan
+info  2021-06-16 04:46:29: Finished Touchlink scan
+info  2021-06-16 04:46:29: MQTT publish: topic 'zigbee2mqtt/bridge/response/touchlink/scan', payload '{"data":{"found":[]},"status":"ok","transaction":"dmf2j-1"}'
+info  2021-06-16 04:46:40: Succesfully changed options
+info  2021-06-16 04:46:40: MQTT publish: topic 'zigbee2mqtt/bridge/response/options', payload '{"data":{"restart_required":false},"status":"ok","transaction":"dmf2j-2"}'
+info  2021-06-16 04:47:23: Succesfully changed options
+info  2021-06-16 04:47:23: MQTT publish: topic 'zigbee2mqtt/bridge/response/options', payload '{"data":{"restart_required":true},"status":"ok","transaction":"dmf2j-3"}'
+info  2021-06-16 04:47:29: Starting network scan (includeRoutes 'false')
+info  2021-06-16 04:47:30: Network scan finished
+info  2021-06-16 04:47:30: MQTT publish: topic 'zigbee2mqtt/bridge/response/networkmap', payload '{"data":{"routes":false,"type":"raw","value":{"links":[],"nodes":[{"definition":null,"failed":[],"friendlyName":"Coordinator","ieeeAddr":"0x00124b0018e2eaa0","lastSeen":null,"networkAddress":0,"type":"Coordinator"}]}},"status":"ok","transaction":"dmf2j-4"}'
+info  2021-06-16 04:48:19: Succesfully changed options
+info  2021-06-16 04:48:19: MQTT publish: topic 'zigbee2mqtt/bridge/response/options', payload '{"data":{"restart_required":true},"status":"ok","transaction":"dmf2j-5"}'
+info  2021-06-16 04:48:25: Succesfully changed options
+info  2021-06-16 04:48:25: MQTT publish: topic 'zigbee2mqtt/bridge/response/options', payload '{"data":{"restart_required":true},"status":"ok","transaction":"dmf2j-6"}'
+error 2021-06-16 04:50:21: Not connected to MQTT server!
+error 2021-06-16 04:50:31: Not connected to MQTT server!
+info  2021-06-16 04:50:34: Succesfully changed options
+error 2021-06-16 04:50:34: Not connected to MQTT server!
+error 2021-06-16 04:50:34: Cannot send message: topic: 'zigbee2mqtt/bridge/response/options', payload: '{"data":{"restart_required":true},"status":"ok","transaction":"dmf2j-7"}
+error 2021-06-16 04:50:41: Not connected to MQTT server!
+error 2021-06-16 04:50:51: Not connected to MQTT server!
+info  2021-06-16 04:50:52: Succesfully changed options
+error 2021-06-16 04:50:52: Not connected to MQTT server!
+error 2021-06-16 04:50:52: Cannot send message: topic: 'zigbee2mqtt/bridge/response/options', payload: '{"data":{"restart_required":true},"status":"ok","transaction":"dmf2j-8"}
+info  2021-06-16 04:50:56: Restarting Zigbee2MQTT
+error 2021-06-16 04:50:56: Not connected to MQTT server!
+error 2021-06-16 04:50:56: Cannot send message: topic: 'zigbee2mqtt/bridge/response/restart', payload: '{"data":{},"status":"ok","transaction":"dmf2j-9"}
+error 2021-06-16 04:50:56: Not connected to MQTT server!
+error 2021-06-16 04:50:56: Cannot send message: topic: 'zigbee2mqtt/bridge/state', payload: 'offline
+info  2021-06-16 04:50:56: Disconnecting from MQTT server
+info  2021-06-16 04:50:56: Stopping zigbee-herdsman...
+info  2021-06-16 04:50:56: Stopped zigbee-herdsman
+info  2021-06-16 04:50:56: Stopped Zigbee2MQTT
+info  2021-06-16 04:50:57: Logging to console and directory: '/config/zigbee2mqtt/log/2021-06-16.04-42-16' filename: log.txt
+info  2021-06-16 04:50:57: Starting Zigbee2MQTT version 1.19.1 (commit #1.19.1)
+info  2021-06-16 04:50:57: Starting zigbee-herdsman (0.13.111)
+info  2021-06-16 04:50:58: zigbee-herdsman started
+info  2021-06-16 04:50:58: Coordinator firmware version: '{"meta":{"maintrel":3,"majorrel":2,"minorrel":6,"product":0,"revision":20201127,"transportrev":2},"type":"zStack12"}'
+info  2021-06-16 04:50:58: Currently 0 devices are joined:
+warn  2021-06-16 04:50:58: `permit_join` set to  `true` in configuration.yaml.
+warn  2021-06-16 04:50:58: Allowing new devices to join.
+warn  2021-06-16 04:50:58: Set `permit_join` to `false` once you joined all devices.
+info  2021-06-16 04:50:58: Zigbee: allowing new devices to join.
+info  2021-06-16 04:50:58: Started frontend on port 0.0.0.0:8099
+info  2021-06-16 04:50:59: Connecting to MQTT server at mqtt://core-mosquitto:1883
+error 2021-06-16 04:51:09: Not connected to MQTT server!
+error 2021-06-16 04:51:19: Not connected to MQTT server!
+error 2021-06-16 04:51:29: Not connected to MQTT server!
+error 2021-06-16 04:51:39: Not connected to MQTT server!
+info  2021-06-16 04:51:46: Connected to MQTT server
+info  2021-06-16 04:51:46: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload 'online'
+info  2021-06-16 04:51:46: MQTT publish: topic 'zigbee2mqtt/bridge/config', payload '{"commit":"1.19.1","coordinator":{"meta":{"maintrel":3,"majorrel":2,"minorrel":6,"product":0,"revision":20201127,"transportrev":2},"type":"zStack12"},"log_level":"info","network":{"channel":11,"extendedPanID":"0x00124b0018e2eaa0","panID":6754},"permit_join":true,"version":"1.19.1"}'
+info  2021-06-16 04:52:08: Starting network scan (includeRoutes 'false')
+info  2021-06-16 04:52:09: Network scan finished
+info  2021-06-16 04:52:09: MQTT publish: topic 'zigbee2mqtt/bridge/response/networkmap', payload '{"data":{"routes":false,"type":"raw","value":{"links":[],"nodes":[{"definition":null,"failed":[],"friendlyName":"Coordinator","ieeeAddr":"0x00124b0018e2eaa0","lastSeen":null,"networkAddress":0,"type":"Coordinator"}]}},"status":"ok","transaction":"dmf2j-10"}'
+info  2021-06-16 04:52:37: Zigbee: disabling joining new devices.
+info  2021-06-16 04:52:37: MQTT publish: topic 'zigbee2mqtt/bridge/response/permit_join', payload '{"data":{"time":254,"value":false},"status":"ok","transaction":"dmf2j-11"}'
+info  2021-06-16 04:52:40: Zigbee: allowing new devices to join.
+info  2021-06-16 04:52:40: MQTT publish: topic 'zigbee2mqtt/bridge/response/permit_join', payload '{"data":{"time":254,"value":true},"status":"ok","transaction":"dmf2j-12"}'
+info  2021-06-16 04:52:43: Zigbee: disabling joining new devices.
+info  2021-06-16 04:52:43: MQTT publish: topic 'zigbee2mqtt/bridge/response/permit_join', payload '{"data":{"time":254,"value":false},"status":"ok","transaction":"dmf2j-13"}'
+info  2021-06-16 04:52:44: Zigbee: allowing new devices to join.
+info  2021-06-16 04:52:45: MQTT publish: topic 'zigbee2mqtt/bridge/response/permit_join', payload '{"data":{"time":254,"value":true},"status":"ok","transaction":"dmf2j-14"}'
+info  2021-06-16 04:53:06: Start Touchlink scan
+info  2021-06-16 04:53:17: Finished Touchlink scan
+info  2021-06-16 04:53:17: MQTT publish: topic 'zigbee2mqtt/bridge/response/touchlink/scan', payload '{"data":{"found":[]},"status":"ok","transaction":"dmf2j-15"}'
+info  2021-06-16 04:53:22: Start Touchlink scan
+info  2021-06-16 04:53:33: Finished Touchlink scan
+info  2021-06-16 04:53:33: MQTT publish: topic 'zigbee2mqtt/bridge/response/touchlink/scan', payload '{"data":{"found":[]},"status":"ok","transaction":"dmf2j-16"}'
+info  2021-06-16 04:53:40: Start Touchlink scan
+info  2021-06-16 04:53:51: Finished Touchlink scan
+info  2021-06-16 04:53:51: MQTT publish: topic 'zigbee2mqtt/bridge/response/touchlink/scan', payload '{"data":{"found":[]},"status":"ok","transaction":"dmf2j-17"}'
+error 2021-06-16 04:54:52: Request 'zigbee2mqtt/bridge/request/group/add' failed with error: 'friendly_name must be at least 1 char long'

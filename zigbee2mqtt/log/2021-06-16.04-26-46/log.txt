@@ -1,0 +1,14 @@
+warn  2021-06-16 04:26:51: `permit_join` set to  `true` in configuration.yaml.
+warn  2021-06-16 04:26:51: Allowing new devices to join.
+warn  2021-06-16 04:26:51: Set `permit_join` to `false` once you joined all devices.
+info  2021-06-16 04:29:13: Succesfully changed options
+info  2021-06-16 04:29:13: MQTT publish: topic 'zigbee2mqtt/bridge/response/options', payload '{"data":{"restart_required":false},"status":"ok","transaction":"4n6fi-3"}'
+info  2021-06-16 04:29:31: Succesfully changed options
+info  2021-06-16 04:29:31: MQTT publish: topic 'zigbee2mqtt/bridge/response/options', payload '{"data":{"restart_required":false},"status":"ok","transaction":"4n6fi-6"}'
+debug 2021-06-16 04:29:34: Received MQTT message on 'zigbee2mqtt/bridge/request/options' with data '{"options":{"advanced":{"log_level":"info"}},"transaction":"4n6fi-7"}'
+info  2021-06-16 04:29:34: Succesfully changed options
+info  2021-06-16 04:29:34: MQTT publish: topic 'zigbee2mqtt/bridge/response/options', payload '{"data":{"restart_required":false},"status":"ok","transaction":"4n6fi-7"}'
+info  2021-06-16 04:42:03: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload 'offline'
+info  2021-06-16 04:42:03: Disconnecting from MQTT server
+info  2021-06-16 04:42:03: Stopping zigbee-herdsman...
+info  2021-06-16 04:42:03: Stopped zigbee-herdsman

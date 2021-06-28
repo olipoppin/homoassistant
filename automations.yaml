@@ -25,3 +25,157 @@
       entity_id: media_player.bathroom_speaker
       message: Bitch.... yo phone is dyin! Plug it in
   mode: single
+
+
+
+- id: '1623407895219'
+  alias: Turn the light on when motion is detected
+  description: ''
+  trigger:
+  - platform: device
+    domain: binary_sensor
+    entity_id: binary_sensor.motion_sensor_2_981ead23_ias_zone
+    device_id: a91f3ba6a8a83b747058ffb3f55b9ad4
+    type: motion
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 3
+      milliseconds: 0
+  condition: []
+  action:
+  - service: tts.google_translate_say
+    data:
+      entity_id: media_player.bedroom_display
+      message: the floofer is done pooping. let him in
+      cache: true
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - service: tts.google_translate_say
+    data:
+      entity_id: media_player.bedroom_display
+      message: seriously    he is getting lonely
+      cache: true
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  - type: toggle
+    device_id: 08aa1bc594bdefb2db1a0ac8d7c83679
+    entity_id: light.57607152c82b960c791f
+    domain: light
+  mode: single
+        
+        
+- id: '1624730646418'
+  alias: Visitor at front door
+  description: motion activated lights for front door
+  use_blueprint:
+    path: home-assistant/motion_light.yaml
+    input:
+      motion_entity: binary_sensor.front_doorbell
+      light_target:
+        entity_id:
+        - light.57607152a4cf12e1e50f

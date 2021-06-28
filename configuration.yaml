@@ -1,0 +1,105 @@
+#default_config:
+
+homeassistant:
+ customize: !include customize.yaml
+automation: !include automations.yaml
+group: !include groups.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+  
+system_health:
+
+cloud:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+camera:
+  - platform: ffmpeg
+    name: Wyze Cam 1
+    input: !secret wyzecam1
+    
+  - platform: ffmpeg
+    name: Wyze Cam 2
+    input: !secret wyzecam2
+    
+  - platform: ffmpeg
+    name: Wyze Cam 3
+    input: !secret wyzecam3
+    
+  - platform: mjpeg
+    name: plotter_cam
+    mjpeg_url: http://192.168.0.84:8081/live
+
+light:
+  - platform: flux_led
+    devices:
+      192.168.0.22:
+        name: TV Lights
+      192.168.0.52:
+        name: Kitchen Counter Lights
+        
+zeroconf:
+
+ifttt:
+  key: YNHyCbuOx3xIIrNZjZYRIzvT5yAq4gr0Inxj8H9yRvs2eUMein4ggB3wZhRlimPV
+  
+sensor:
+ssdp:
+ios:
+alexa:
+mobile_app:
+    
+webostv:
+  host: 192.168.0.68
+  name: LG Smart TV
+  turn_on_action:
+    service: wake_on_lan.send_magic_packet
+    data:
+       mac: !secret lg_smart_tv_mac
+  customize:
+    sources:
+      - livetv
+      - youtube
+      - pornhub
+      - netflix
+      - hulu
+      - plex
+      - disney+
+      
+media_player:
+
+notify:
+
+wake_on_lan:
+
+frontend:
+  themes: !include themes.yaml
+  
+zha:
+  zigpy_config:
+    znp_config:
+      # "auto" picks the largest value that keeps the device's transmit buffer from getting full
+      max_concurrent_requests: auto
+
+      # Only if your stick has a controllable LED (the CC2531)
+      # If set, must be one of: "off", "on", blink, flash, toggle
+      #                   Note: "off" and "on" must be quoted!
+      led_mode:  flash
+
+
+      ### Internal configuration, there's no reason to touch these values
+
+      # Skips the 60s bootloader delay on CC2531 sticks
+      skip_bootloader: True
+
+      # Timeout for synchronous requests' responses
+      sreq_timeout: 15
+
+      # Timeout for asynchronous requests' callback responses
+      arsp_timeout: 30
+
+      # Delay between auto-reconnect attempts in case the device gets disconnected
+      auto_reconnect_retry_delay: 5
+      

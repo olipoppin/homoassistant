@@ -1,5 +1,8 @@
-light.tv_lights:
-  supported_color_modes:
-  - color_temp
-  - hs
-  - rgb
+camera.wyze_cam_1:
+  friendly_name: Driveway Camera
+camera.wyze_cam_2:
+  friendly_name: Nightstand Camera
+fan.dyson_pure_link_fan:
+  speed: 10
+  friendly_name: dyson fan
+
